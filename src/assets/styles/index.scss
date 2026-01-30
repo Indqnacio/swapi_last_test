@@ -37,8 +37,8 @@
 
 body {
   display: flex;
-  place-items: center;
   min-height: 100vh;
+  background-color: (var(--color-fondo));
 }
 
 .side_nav_container {
@@ -66,12 +66,30 @@ body {
   border-radius: 10px;
   opacity: 1;
 }
-.bars_menus{
+.bars_menus {
+  background: #ffffff;
   display: flex;
+  width: 1920px;
+  height: 94px;
+  opacity: 10;
+  justify-content: space-around;
 }
-.body_container{
+.body_container {
   display: flex;
+  margin-left: 4vw;
+  margin-top: 0.5vh;
+  width: 1823px;
+  height: 851px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow:
+    inset 0px 3px 10px #0000000d,
+    5px 10px 6px #0000000d;
+  opacity: 1;
 }
+
+
+
+
 
 
 @media (prefers-color-scheme: light) {

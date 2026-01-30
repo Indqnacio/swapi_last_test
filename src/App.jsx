@@ -10,13 +10,13 @@ function App() {
     <>
       <div className="bars_menus">
         <SideNav />
-        <div className="body_container">
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Films />} />
-            <Route path="/films" element={<Films />} />
-          </Routes>
-        </div>
+        <NavBar />
+      </div>
+      <div className="body_container">
+        <Routes>
+          <Route path="/" element={<Films />} />
+          <Route path="/films" element={<Films />} />
+        </Routes>
       </div>
     </>
   );
