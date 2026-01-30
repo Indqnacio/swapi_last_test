@@ -1,0 +1,25 @@
+//? Temas globales para la pagina web
+$tema-oscuro: (
+  fondo: #000000,
+  logos_icons: #1b36c6,
+  botones: #384cb4,
+  texto: #ffffff,
+);
+
+$tema-claro: (
+  fondo: #201e1e,
+  logos_icons: #1b36c6,
+  botones: #384cb4,
+  texto: #74726f,
+);
+
+//? variables de colores
+$colores: (
+  "negro": black,
+  "azul": rgb(55, 55, 197),
+);
+
+$fuentes: (
+  "normal": Verdana,
+  "titulo": Helvetica,
+);
