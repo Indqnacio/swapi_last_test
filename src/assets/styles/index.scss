@@ -40,76 +40,83 @@ body {
   min-height: 100vh;
   background-color: (var(--color-fondo));
 }
+.icon {
+  color: (var(--color-texto));
+}
+.principal_div {
+  display: flex;
+  height: 98vh;
+
+  width: 95.6vw;
+  flex-direction: column;
+}
 
 .side_nav_container {
   // LayOut
-  top: 123px;
-  left: 13px;
-  width: 57px;
-  height: 946px;
+  width: 2.97vw;
+  height: 98vh;
   //UI
   background-color: map.get($colores, "negro");
   border-radius: 10px;
   opacity: 1;
 }
-.nav_bar_container {
-  // LayOut
-  top: 123px;
-  left: 85px;
-  width: 1800px;
-  height: 61px;
-  // UI
+
+.bars_menus {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  height: 9.7vh;
+  opacity: 10;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
+  height: 98%;
+  margin-left: 1%;
+  margin-top: 0.3%;
   background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  box-shadow:
+    inset 0px 0.28vh 0.92vh #0000000d,
+    0.26vw 0.92vh 0.55vh #0000000d;
+}
+
+.search_input {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  padding-left: 2%;
+  width: 93.75vw;
+  height: 5.65vh;
+  margin-top: 0.6%;
+  margin-left: 1%;
+  background-color: #ffffff;
   box-shadow:
     inset 0px 3px 10px #0000000d,
     5px 15px 6px #0000000d;
   border-radius: 10px;
   opacity: 1;
 }
-.bars_menus {
-  background: #ffffff;
+
+.title_input {
   display: flex;
-  width: 1920px;
-  height: 94px;
-  opacity: 10;
-  justify-content: space-around;
-}
-.body_container {
-  display: flex;
-  margin-left: 4vw;
-  margin-top: 0.5vh;
-  width: 1823px;
-  height: 851px;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  align-items: center;
+  width: 97%;
+  height: 5.65vh;
+  padding-left: 2%;
+  padding-bottom: 0.5%;
+  background-color: #ffffff;
   box-shadow:
     inset 0px 3px 10px #0000000d,
-    5px 10px 6px #0000000d;
+    5px 15px 6px #0000000d;
+  border-radius: 10px;
   opacity: 1;
 }
-
-
-
-
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: #cc2020;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-button {
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.title_input h2 {
+  color: (var(--color-texto));
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  font-size: 30px;
 }

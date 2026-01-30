@@ -10,16 +10,42 @@ $tema-claro: (
   fondo: #D8D7D533,
   logos_icons: #1b36c6,
   botones: #384cb4,
-  texto: #74726f,
+  texto: #4560F2,
 );
 
 //? variables de colores
 $colores: (
   "negro": black,
   "azul": rgb(55, 55, 197),
+  "blanco":  #ffffff ,
 );
 
 $fuentes: (
   "normal": Verdana,
   "titulo": Helvetica,
 );
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #cc2020;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+button {
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+*/

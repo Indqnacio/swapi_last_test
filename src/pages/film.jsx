@@ -1,3 +1,4 @@
+import TitleSection from "../components/pages/titleSection";
 import {
   get_films_by_id,
   get_films_select,
@@ -10,7 +11,7 @@ export default function Films() {
   const [totalRecords, setTotalRecords] = useState(0);
   const [loading, setLoading] = useState(true);
   const [data, setAllData] = useState([]);
-  const [test, setTest]= useState(0)
+  const [test, setTest] = useState(0);
 
   useEffect(() => {
     fetchData();
@@ -18,26 +19,27 @@ export default function Films() {
 
   const fetchData = async () => {
     try {
-        const data =  await get_films_paginated(1);
-        dataset(data);
-        setAllData(data)
-        console.log(data)
+      const data = await get_films_paginated(1);
+      dataset(data);
+      setAllData(data);
+      console.log(data);
     } catch (error) {
-        console.log("Aqui mostrarias el mensaje de error");
-    }
-    finally{
-        setLoading(false);
+      console.log("Aqui mostrarias el mensaje de error");
+    } finally {
+      setLoading(false);
     }
   };
 
-  async function dataset(data){
+  async function dataset(data) {
     setAllData(data);
     setTotalRecords(data.length);
     setTest(test + 1);
-
   }
 
-  return <>
-  Este es el componente de Peliculas
-  </>;
+  return (
+    <>
+      <TitleSection />
+      Este es el componente de Peliculas
+    </>
+  );
 }
