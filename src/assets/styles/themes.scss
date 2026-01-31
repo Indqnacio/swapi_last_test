@@ -15,7 +15,10 @@ $tema-claro: (
   botones: #384cb4,
   texto: #4560f2,
   texto_iconos: white,
+  fondo_chip: #91a1f4,
+  texto_chip: #0724b6,
 );
+
 
 //? variables de colores
 $colores: (
@@ -28,28 +31,3 @@ $fuentes: (
   "normal": Verdana,
   "titulo": Helvetica,
 );
-
-/*
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: #cc2020;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-button {
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-*/

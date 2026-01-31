@@ -6,6 +6,8 @@ import {
   faCar,
   faRocket,
   faCircleChevronRight,
+  faEarthAfrica,
+  faDog
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function SideNav() {
@@ -20,15 +22,19 @@ export default function SideNav() {
           <FontAwesomeIcon icon={faUser} /> {"Personajes"}
         </div>
         <div className="row_sidenav">
-          <FontAwesomeIcon icon={faFilm} />
-          {"Peliculas "}
+          <FontAwesomeIcon icon={faFilm} /> {"Peliculas "}
         </div>
         <div className="row_sidenav">
           <FontAwesomeIcon icon={faRocket} /> {"Naves Espaciales "}
         </div>
         <div className="row_sidenav">
-          <FontAwesomeIcon icon={faCar} />
-          {"Vehiculos "}
+          <FontAwesomeIcon icon={faCar} /> {"Vehiculos "}
+        </div>
+        <div className="row_sidenav">
+          <FontAwesomeIcon icon={faEarthAfrica} /> {"Planetas "}
+        </div>
+        <div className="row_sidenav">
+          <FontAwesomeIcon icon={faDog} /> {"Planetas "}
         </div>
       </div>
     </>
