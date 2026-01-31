@@ -1,23 +1,27 @@
 //? Temas globales para la pagina web
 $tema-oscuro: (
   fondo: #000000,
+  fondo_sidenav: white,
   logos_icons: #1b36c6,
   botones: #384cb4,
   texto: #ffffff,
+  texto_iconos: rgb(0, 0, 0),
 );
 
 $tema-claro: (
-  fondo: #D8D7D533,
+  fondo: #d8d7d533,
+  fondo_sidenav: black,
   logos_icons: #1b36c6,
   botones: #384cb4,
-  texto: #4560F2,
+  texto: #4560f2,
+  texto_iconos: white,
 );
 
 //? variables de colores
 $colores: (
   "negro": black,
   "azul": rgb(55, 55, 197),
-  "blanco":  #ffffff ,
+  "blanco": #ffffff,
 );
 
 $fuentes: (

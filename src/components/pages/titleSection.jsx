@@ -9,6 +9,7 @@ export default function TitleSection() {
         <FontAwesomeIcon className="icon" icon={faFilm} size="2xl" />
         <h2>Peliculas</h2>
       </div>
+      
     </>
   );
 }

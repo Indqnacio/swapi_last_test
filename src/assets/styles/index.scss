@@ -5,7 +5,9 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   --color-fondo: #{map.get($tema-claro, fondo)};
+  --color-fondo-sidenav: #{map.get($tema-claro, fondo_sidenav)};
   --color-texto: #{map.get($tema-claro, texto)};
+  --color-texto-iconos: #{map.get($tema-claro, texto_iconos)};
   --color-botones: #{map.get($tema-claro, botones)};
   --color-logos-icons: #{map.get($tema-claro, logos_icons)};
 
@@ -52,11 +54,10 @@ body {
 }
 
 .side_nav_container {
-  // LayOut
-  width: 2.97vw;
+  color: (var(--color-texto-iconos));
+  width: 45px;
   height: 98vh;
-  //UI
-  background-color: map.get($colores, "negro");
+  background-color: (var(--color-fondo-sidenav));
   border-radius: 10px;
   opacity: 1;
 }
@@ -119,4 +120,20 @@ body {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
   font-size: 30px;
+}
+.row_sidenav {
+  display: flex;
+  gap: 1.5vw;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  white-space: nowrap;
+}
+.row_head_sideNav {
+  margin-left: 3%;
+  display: flex;
+  gap: 1.5vw;
+  margin-top: 12px;
+  margin-left: 4px;
+  margin-bottom: 68.16px;
+  font-size:larger;
 }
