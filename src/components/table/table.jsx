@@ -35,7 +35,7 @@ export default function Table({
             {columns.map((col) => (
               <th key={col.key}>{col.label}</th>
             ))}
-            <th>Acciones</th>
+            <th>{/* Acciones */}</th>
           </tr>
         </thead>
         <tbody>
@@ -116,6 +116,7 @@ export default function Table({
         </tbody>
       </table>
       <Pagination page={page} totalPages={totalPages} onChange={setPage} />
+      <div></div>
     </div>
   );
 }

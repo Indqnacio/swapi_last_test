@@ -7,8 +7,9 @@ import {
   faRocket,
   faCircleChevronRight,
   faEarthAfrica,
-  faDog
+  faDog,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function SideNav() {
   return (
@@ -17,25 +18,24 @@ export default function SideNav() {
         <div className="row_head_sideNav">
           <FontAwesomeIcon icon={faCircleChevronRight} size="xl" />
         </div>
-        <div className="row_sidenav">
-          {" "}
+        <Link to="/characters" className="row_sidenav">
           <FontAwesomeIcon icon={faUser} /> {"Personajes"}
-        </div>
-        <div className="row_sidenav">
+        </Link>
+        <Link to="/films" className="row_sidenav">
           <FontAwesomeIcon icon={faFilm} /> {"Peliculas "}
-        </div>
-        <div className="row_sidenav">
-          <FontAwesomeIcon icon={faRocket} /> {"Naves Espaciales "}
-        </div>
-        <div className="row_sidenav">
-          <FontAwesomeIcon icon={faCar} /> {"Vehiculos "}
-        </div>
-        <div className="row_sidenav">
+        </Link>
+        <Link to="/planets" className="row_sidenav">
           <FontAwesomeIcon icon={faEarthAfrica} /> {"Planetas "}
-        </div>
-        <div className="row_sidenav">
-          <FontAwesomeIcon icon={faDog} /> {"Planetas "}
-        </div>
+        </Link>
+        <Link to="/starships" className="row_sidenav">
+          <FontAwesomeIcon icon={faRocket} /> {"Naves Espaciales "}
+        </Link>
+        <Link to="/vehicles" className="row_sidenav">
+          <FontAwesomeIcon icon={faCar} /> {"Vehiculos "}
+        </Link>
+        <Link to="/species" className="row_sidenav">
+          <FontAwesomeIcon icon={faDog} /> {"Especies "}
+        </Link>
       </div>
     </>
   );

@@ -39,15 +39,20 @@
   --unnamed-line-spacing-18: 18px;
   --unnamed-line-spacing-21: 21px;
 }
+*{
+  font-family: 'Roboto';
+}
 
 body {
   display: flex;
   min-height: 100vh;
   background-color: (var(--color-fondo));
 }
+
 .icon {
   color: (var(--color-texto));
 }
+
 .principal_div {
   display: flex;
   height: 98vh;
@@ -69,7 +74,8 @@ body {
   background-color: #ffffff;
   display: flex;
   width: 96vw;
-  height: 9.7vh;
+  height: 9.5vh;
+  margin-bottom: 0.1%;
   opacity: 10;
   justify-content: space-between;
 }
@@ -80,7 +86,7 @@ body {
   width: 99%;
   height: 97%;
   margin-left: 1%;
-  margin-top: 0.3%;
+
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 10px;
   box-shadow:
@@ -110,6 +116,7 @@ body {
   align-items: center;
   width: 96%;
   height: 4.65vh;
+  gap: 1%;
   margin-top: 1%;
   padding-left: 2%;
   padding-top: 0.5%;
@@ -134,11 +141,18 @@ body {
   align-items: flex-end;
 }
 .row_sidenav {
+  transition: all 0.1s ease-in-out;
+  color: (var(--color-texto-iconos));
   display: flex;
-  gap: 1.5vw;
+  gap: 1rem;
   margin-left: 16px;
   margin-bottom: 32px;
   white-space: nowrap;
+}
+.row_sidenav :hover,
+.row_head_sideNav:hover {
+  color: (var(--color-texto));
+  font-size: larger;
 }
 .row_head_sideNav {
   margin-left: 3%;

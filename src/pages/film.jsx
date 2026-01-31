@@ -1,4 +1,6 @@
 import TitleSection from "../components/pages/titleSection";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
+
 import {
  // get_films_by_id,
   //get_films_select,
@@ -54,10 +56,9 @@ export default function Films() {
 
   return (
     <>
-      <TitleSection />
+      <TitleSection text="Peliculas" icon={faFilm} />
       <div className="page-section">
-        <h2>Películas</h2>
-        <p>Total de registros: {totalRecords}</p>
+        <h2>Aqui van los botones</h2>
         <Table columns={FilmModel.columns} data={data} onAction={handleTableAction} dataPerPage={10} />
         <Dialog open={dialogOpen} title={dialogMode === 'view' ? 'Detalle de película' : dialogMode === 'edit' ? 'Editar película' : dialogMode === 'delete' ? 'Eliminar película' : ''} onClose={() => setDialogOpen(false)}>
           {dialogMode === 'view' && (
@@ -75,11 +76,10 @@ export default function Films() {
 
           {dialogMode === 'delete' && (
             <div>
-              <p>¿Deseas eliminar este registro?</p>
-              <pre style={{whiteSpace: 'pre-wrap'}}>{JSON.stringify(selectedRow, null, 2)}</pre>
+              <p>¿Estas seguro que deseas eliminar este registro con nombre <strong>"{selectedRow.title}"</strong>  ?</p>
               <div style={{marginTop: '1rem', display: 'flex', gap: '0.5rem'}}>
                 <button onClick={() => { setDialogOpen(false); }}>Cancelar</button>
-                <button onClick={() => { /* TODO: call delete API */ setDialogOpen(false); }} style={{background: 'var(--color-botones)', color: '#fff'}}>Eliminar</button>
+                <button onClick={() => { /* TODO: call delete API */ setDialogOpen(false); }} style={{background: 'var(--color-botones)', color: '#fff'}}>Aceptar</button>
               </div>
             </div>
           )}

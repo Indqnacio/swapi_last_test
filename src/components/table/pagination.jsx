@@ -63,5 +63,6 @@ export default function Pagination({
         »
       </button>
     </div>
+    
   );
 }
