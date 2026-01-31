@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilm,
@@ -12,11 +12,17 @@ import {
 import { Link } from "react-router-dom";
 
 export default function SideNav() {
+  const [visible, setVisible] = useState(1);
+
+  useEffect(() => {
+   console.log("abierto")
+  }, [visible]);
+
   return (
     <>
-      <div className="side_nav_container">
+      <div className={`side_nav_container ${visible ? "open" : ""}`} >
         <div className="row_head_sideNav">
-          <FontAwesomeIcon icon={faCircleChevronRight} size="xl" />
+          <FontAwesomeIcon onClick={() => setVisible(!visible)} icon={faCircleChevronRight} size="xl" />
         </div>
         <Link to="/characters" className="row_sidenav">
           <FontAwesomeIcon icon={faUser} /> {"Personajes"}

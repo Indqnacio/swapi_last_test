@@ -62,12 +62,19 @@ body {
 }
 
 .side_nav_container {
-  color: (var(--color-texto-iconos));
-  width: 45px; //200px cuando se agrande
+  color: var(--color-texto-iconos);
+  width: 45px;
   height: 98vh;
-  background-color: (var(--color-fondo-sidenav));
+  background-color: var(--color-fondo-sidenav);
   border-radius: 10px;
   opacity: 1;
+  transition: width 0.3s ease; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  // Cuando tenga AMBAS clases (.side_nav_container y .open)
+  &.open {
+    width: 200px;
+  }
 }
 
 .bars_menus {
